@@ -48,11 +48,12 @@ plt.show()
 
 df['Pays'] = df['Pays'].apply(lambda x: x.split(',')[0].strip())
 counts = df.groupby('Pays')['Titre'].count().nlargest(5)
+plt.figure(figsize=(10, 8))
 counts.plot(kind='bar', color='yellow', edgecolor='red', width=0.9)
-
+plt.xticks(rotation=45, fontsize=8)
 plt.xlabel('Pays')
 plt.ylabel('Quantité')
-plt.title('Nombre de meilleurs films par Pays')
+plt.title('Nombre de films dans le Top par Pays')
 plt.savefig('pays.png')
 plt.show()
 
