@@ -5,6 +5,10 @@ Ce programme utilise la bibliothèque Urllib pour lire l'URL du site internet, B
     Urllib
     Pandas
     BeautifulSoup
+    Matplotlib
 
 ## Utilisation
 Exécutez le script et il commencera à chercher les 250 meilleures films pour les mettre dans un fichier de type CSV.
+
+## Image
+![graphique](graphique.png)
