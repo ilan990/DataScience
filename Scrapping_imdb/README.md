@@ -1,5 +1,5 @@
 # Extractions de données IMDB
-Ce programme utilise la bibliothèque Urllib pour lire l'URL du site internet, BeautifulSoup pour aller chercher les données et Pandas pour tout mettre dans un CSV.
+Ce programme recherche sur le site IMDB les meilleurs films de tous les temps, les enregistre dans un fichier CSV et crée un graphique qui montre le nombre de meilleurs films par dizaine d'années
 
 ## Dépendances
     Urllib
