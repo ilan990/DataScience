@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import re
 import requests
+from wordcloud import WordCloud
 
 url = 'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
 page = urllib.request.urlopen(url, timeout=5)
@@ -59,3 +60,14 @@ plt.show()
 
 # Enregistrer les données dans un fichier CSV
 df.to_csv('nombres.csv', index=False)
+
+text = ' '.join(df['Titre'])
+
+wordcloud = WordCloud(width=800, height=400, background_color='white', max_words=100).generate(text)
+
+# Afficher le nuage de mots
+plt.figure(figsize=(12, 10))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.savefig('nuagedemots.png')
+plt.show()

@@ -13,6 +13,7 @@ Ce programme :
     Matplotlib
     re
     request
+    Wordcloud
 
 ## Utilisation
 Exécutez le script et il commencera à chercher les 250 meilleures films pour les mettre dans un fichier de type CSV.
@@ -20,4 +21,6 @@ Exécutez le script et il commencera à chercher les 250 meilleures films pour l
 ## Image
 ![graphique](graphique.png)
 ![graphique](pays.png)
+Les mots les plus frequemment utilisés dans les titres de films
+![nuagedemots](nuagedemots.png)
 
